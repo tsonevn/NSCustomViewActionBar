@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo"   xmlns:cC="mycustom">
+<Page.actionBar>
+    <cC:CustomView />
+</Page.actionBar>
+  
+  <StackLayout>
+    <Label text="Tap the button" class="title"/>
+    <Button text="TAP" tap="{{ onTap }}" />
+    <Button text="nextPage" tap="gotonextpage" />
+    
+    <Label text="{{ message }}" class="message" textWrap="true"/>
+  </StackLayout>
+</Page>
